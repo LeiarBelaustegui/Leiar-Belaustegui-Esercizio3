@@ -1,0 +1,231 @@
+@import url(fonts.css);
+
+/* Fuente y reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+	--rosso: #AD0C19; 
+
+}
+body{
+  width: 100%;
+  min-width: 320px;
+
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    font-family: poppins-medium;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f8f8f8;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    font-family: Poppins-Bold;
+}
+
+/* Sección Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: 10%;
+    background-color: white;
+    height: auto;
+}
+
+
+.hero-content {
+    width: 50%;
+}
+
+.hero h1 {
+    border: 1px transparent;
+    width: 80%;
+    font-size: 50px;
+    font-family: Arsenical-Regular;
+    font-weight: lighter;
+
+}
+
+.hero button {
+    display: inline-block;
+    color:#AD0C19;
+    padding: 10px 20px;
+    border: 4px;
+    border-color: #AD0C19;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+
+.hero button:hover{
+    
+    background-color: #AD0C19;
+    color: #f8f8f8;
+  }
+
+
+
+.hero-image {
+    align-items: flex-end;
+    width: 80%;
+    overflow: hidden;
+
+}
+
+.hero-image img {
+    width: 100%;
+    height: 780px;
+    object-fit: cover; 
+    object-position: center; 
+    display: block;
+}
+
+/* Rectángulo rosso */
+.hero-separator {
+    width: 100%; /* Ocupa todo el ancho */
+    height: 120px; /* Ajusta la altura */
+    background-color: #AD0C19; 
+    margin: 0; 
+    padding: 0;
+    position: relative; 
+}
+
+/* Sección About */
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 120px 10%;
+    background-color: white;
+}
+
+.about-content {
+    text-align: center;
+    font-size: small;
+   
+}
+
+.about img {
+    float: left;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+}
+
+.about-content p {
+    border: 1px transparent;
+    width: 50%;
+    max-width: 350px;
+    float: right;
+    text-align: left;
+    font-size: 13px;
+    font-family: Poppins-Regular;
+    line-height:1.5;
+    margin-bottom: 20px;
+
+}
+
+/* Galería */
+.gallery {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 450px;
+    float: inherit;
+    margin-bottom: 20px;
+}
+
+.gallery p {
+        border: 1px transparent;
+        width: 50%;
+        max-width: 42%;
+        font-family: Poppins-Regular;
+        text-align: center;
+        font-size: 13px;
+        line-height:1.5;
+        margin-bottom: 20px;
+        margin-left: 30%;
+    
+    }
+   /* Tickets */
+    .tickets {
+        color: black;
+        text-align: center;
+        padding: 80px 10%;
+    }
+    
+    .tickets h2 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 70px;
+    }
+    
+    .ticket-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .ticket {
+        background-color:#AD0C19;
+        color: white;
+        padding: 25px;
+        border-radius: 20px;
+        font-size: 15px;
+        width: 200px;
+        height: 150px;
+        text-align: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ====== FOOTER ====== */
+footer {
+    background-color: #AD0C19;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 10px;
+}
